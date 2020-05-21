@@ -5,3 +5,17 @@
  */
 
 // You can delete this file if you're not using it
+const React = require("react");
+const { Helmet } = require("react-helmet")
+
+exports.onPreRenderHTML = ({ getHeadComponents, replaceHeadComponents }) => {
+    const headComponents = getHeadComponents()
+    headComponents.push(
+            <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />,
+            <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet" />,
+            <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />,
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />,
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous" />)
+    console.log("HELLO")
+    replaceHeadComponents(headComponents)
+}

@@ -1,21 +1,74 @@
-import React from "react"
-import { Link } from "gatsby"
+import React, { Component } from 'react';
+import './index.css';
+import SEO from '../components/seo';
+import NameHeader from '../components/NameHeader';
+import CircleButtons from '../components/CircleButtons';
+import ExperienceSection from '../components/ExperienceSection';
+import ProjectsSection from '../components/ProjectsSection';
+import FooterSection from '../components/FooterSection';
+import ReturnToTopButton from '../components/ReturnToTopButton';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import ScrollAnimation from 'react-animate-on-scroll';
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
-
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+class IndexPage extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      yOffset: 0
+    }
+  }
+  componentDidMount() {
+    window.addEventListener('scroll', () => {
+      this.setState({
+        yOffset: window.pageYOffset
+      })
+    })
+  }
+  render() {
+    return (
+    <div>
+      <SEO title="Home" />
+      <Container>
+        <ScrollAnimation animateIn="fadeIn" animateOnce="True">
+          <NameHeader />
+          <CircleButtons onClick={this.handleCircleClick}/>
+        </ScrollAnimation>
+        <div id="content">
+          <ScrollAnimation animateIn="fadeIn" animateOnce="True">
+            <Row>
+              <Col md={12}>
+                <hr/>
+              </Col>
+            </Row>
+            <Row>
+                <Col id="projects" md={{span: 10, offset: 1}}>
+                  <ProjectsSection />
+                </Col>
+            </Row>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeIn" animateOnce="True">
+            <div className="pb-5" >
+              <Row>
+                <Col md={12}>
+                  <hr/>
+                </Col>
+              </Row>
+              <Row id="experience">
+                  <Col md={{span: 10, offset: 1}}>
+                    <ExperienceSection />
+                  </Col>
+              </Row>
+            </div>
+          </ScrollAnimation>
+        </div>
+      </Container>
+      <ReturnToTopButton yOffset={this.state.yOffset} />
+      <FooterSection />
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+    );
+  }
+}
 
-export default IndexPage
+export default IndexPage;

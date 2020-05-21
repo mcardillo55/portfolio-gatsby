@@ -1,0 +1,130 @@
+h2, h3, h4 {
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+  font-size: 80px;
+  font-family: 'Roboto Slab', serif;
+}
+
+html {
+    overflow-y: scroll;
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    margin-bottom: 60px;
+    color: #00687C;
+    font-family: "Roboto", sans-serif !important ;
+}
+
+footer {
+    background-color: #f5f5f5;
+    bottom: 0;
+    height: 60px;
+    position: absolute;
+    width: 100%;
+}
+
+.badge-primary {
+  color: #00687C;
+  background-color: #4CE2FF;
+}
+
+.card-title {
+  font-family: 'Roboto Slab', serif;
+}
+
+.container {
+    max-width: 992px;
+}
+
+.circle {
+  background: #4CE2FF;
+  border-radius: 50%;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  height: 160px;
+  width: 160px;
+  padding-top: 40px;
+  vertical-align: middle;
+}
+
+a {
+  color: #00ABCC;
+  outline: 0;
+  text-decoration: none;
+}
+
+a#name-link{
+  color: #00687C;
+  outline: 0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4CE2FF;
+  outline: 0;
+  text-decoration: none;
+}
+
+a.circle-link {
+  color: #00687C;
+  outline: 0;
+  text-decoration: none;
+}
+
+a:hover.circle-link {
+  color: #00ABCC;
+  text-decoration: none;
+}
+
+a.circle-link-active {
+  color: #00ABCC;
+  text-decoration: none;
+}
+
+.col-center {
+    margin: 0 auto;
+}
+
+.fa-envelope {
+    cursor: pointer;
+}
+
+.project {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.small-nav {
+  background: #4CE2FF;
+  font-size: 30px;
+}
+
+#footer-container {
+    margin-top: 15px;
+}
+
+#page-wrap {
+    padding-bottom: 30px;
+}
+
+#social-media a,
+#social-media i{
+    color: #777;
+    margin-right: 3px;
+    text-decoration: none;
+}
+
+#return-to-top {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #4CE2FF;
+  color: #00687C;
+  border: none;
+  text-decoration: none;
+}
