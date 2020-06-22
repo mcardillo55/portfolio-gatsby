@@ -29,6 +29,15 @@ const ProjectsSection = () => {
                                 "Features curses interface to view real-time program data in console"]}/>
               </Col>
               <Col md={6} className="my-2">
+                <ProjectCard title="ImgSite" 
+                        source_link="https://github.com/mcardillo55/imagesite"
+                        demo_link="https://www.michaeljcardillo.com/imgsite"
+                        image={ImgSite}
+                        description="Clone of Imgur. Image hosting service with user accounts."
+                        stack={["Python", "Django", "Bootstrap"]}
+                        years="2014" />
+              </Col>
+              <Col md={6} className="my-2">
                 <ProjectCard title="soundcloud-dj" 
                         source_link="https://github.com/mcardillo55/soundcloud-dj"
                         demo_link="https://www.michaeljcardillo.com/scdj"
@@ -44,15 +53,6 @@ const ProjectsSection = () => {
                         image={Unfriended}
                         description="Obtains and stores user's Facebook Friend List to be compared with lists on subsequent visits to display those who have removed you."
                         stack={["Python", "Flask", "Bootstrap"]}
-                        years="2014" />
-              </Col>
-              <Col md={6} className="my-2">
-                <ProjectCard title="ImgSite" 
-                        source_link="https://github.com/mcardillo55/imagesite"
-                        demo_link="https://www.michaeljcardillo.com/imgsite"
-                        image={ImgSite}
-                        description="Clone of Imgur. Image hosting service with user accounts."
-                        stack={["Python", "Django", "Bootstrap"]}
                         years="2014" />
               </Col>
               <Col md={6} className="my-2">
