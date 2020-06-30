@@ -28,7 +28,7 @@ class SocialSection extends Component {
                     <i className="fa fa-linkedin-square fa-lg"></i>
                 </a>
                 <i className="fa fa-envelope fa-lg" onClick={this.toggleEmail}></i>
-                {this.state.email_visible ? <span id="email-address">mike@mjcardillo.com</span> : null}
+                {this.state.email_visible ? <span id="email-address">mcardillo55@gmail.com</span> : null}
             </Col>
         )
     }
