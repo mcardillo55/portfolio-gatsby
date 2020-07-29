@@ -20,7 +20,7 @@ const ProjectsSection = () => {
                         demo_link="https://www.michaeljcardillo.com/cbpro/"
                         image={CBPro}
                         description="Automated cryptocurrency trader that uses technical analysis strategies to trade on live tick data provided by Coinbase"
-                        stack={["Python", "Websocket", "NumPy"]}
+                        stack={["Python", "Flask", "ReactJS", "Websockets", "NumPy"]}
                         years="2017-2018" />
               </Col>
               <Col md={6} className="my-2">
