@@ -21,12 +21,7 @@ const ProjectsSection = () => {
                         image={CBPro}
                         description="Automated cryptocurrency trader that uses technical analysis strategies to trade on live tick data provided by Coinbase"
                         stack={["Python", "Websocket", "NumPy"]}
-                        years="2017-2018" 
-                        tasks={["Consumes tick data <a href='https://pro.coinbase.com/'>Coinbase Pro</a> websocket",
-                                "Calculates <a href='https://en.wikipedia.org/wiki/Technical_analysis'>technical analysis</a> indicators",
-                                "Places buy and sell orders in threads via the Coinbase Pro REST API",
-                                "Determines whether to place free limit orders or instant market orders, based on market volatility, ",
-                                "Features curses interface to view real-time program data in console"]}/>
+                        years="2017-2018" />
               </Col>
               <Col md={6} className="my-2">
                 <ProjectCard title="ImgSite" 
