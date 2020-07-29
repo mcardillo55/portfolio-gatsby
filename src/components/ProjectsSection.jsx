@@ -49,7 +49,6 @@ const ProjectsSection = () => {
               <Col md={6} className="my-2">
                 <ProjectCard title="unfriended" 
                         source_link="https://github.com/mcardillo55/unfriended-flask"
-                        demo_link="https://www.michaeljcardillo.com/unfriended-flask/"
                         image={Unfriended}
                         description="Obtains and stores user's Facebook Friend List to be compared with lists on subsequent visits to display those who have removed you."
                         stack={["Python", "Flask", "Bootstrap"]}
