@@ -8,54 +8,72 @@ import Unfriended from '../images/unfriended.png'
 import SSPL from '../images/sspl.png'
 import ImgSite from '../images/imgsite.png'
 
+const projects_list = 
+  [
+    {
+      title: "cbpro-trader",
+      source_link: "https://github.com/mcardillo55/cbpro-trader",
+      demo_link: "https://www.michaeljcardillo.com/cbpro/",
+      image: CBPro,
+      description: "Automated cryptocurrency trader that uses technical analysis strategies to trade on live tick data provided by Coinbase",
+      stack: ["Python", "Flask", "ReactJS", "Websockets", "NumPy"],
+      years: "2017-2018"
+    },
+    {
+      title: "ImgSite",
+      source_link: "https://github.com/mcardillo55/imagesite",
+      demo_link: "https://www.michaeljcardillo.com/imgsite",
+      image: ImgSite,
+      description: "Clone of Imgur. Image hosting service with user accounts.",
+      stack: ["Python", "Django", "Bootstrap"],
+      years: "2016"
+    },
+    {
+      title: "soundcloud-dj",
+      source_link: "https://github.com/mcardillo55/soundcloud-dj",
+      demo_link: "https://www.michaeljcardillo.com/scdj",
+      image: SCDJ,
+      description: "Parses a Facebook group with Graph API to locate and store SoundCloud and YouTube URLs. Songs are then displayed in their respective player via an AngularJS Frontend",
+      stack: ["Python", "Flask", "AngularJS", "SQLite", "SocketIO"],
+      years: "2014"
+    },
+    {
+      title: "unfriended",
+      source_link: "https://github.com/mcardillo55/unfriended-flask",
+      image: Unfriended,
+      description: "Obtains and stores user's Facebook Friend List to be compared with lists on subsequent visits to display those who have removed you.",
+      stack: ["Python", "Flask", "Bootstrap"],
+      years: "2014"
+    },
+    {
+      title: "Student Space Programs Laboratory",
+      image: SSPL,
+      description: "Developed front end interface to parse XML messages from a near-space satellite, which were then classified by severity and displayed in table",
+      stack: ["C", "GTK+"],
+      years: "2010"
+    }
+  ]
 const ProjectsSection = () => {
   return(
     <div id="projects">
         <div id="projects">
             <h2>Projects</h2>
             <Row className="mb-3">
-              <Col md={6} className="my-2">
-                <ProjectCard title="cbpro-trader" 
-                        source_link="https://github.com/mcardillo55/cbpro-trader"
-                        demo_link="https://www.michaeljcardillo.com/cbpro/"
-                        image={CBPro}
-                        description="Automated cryptocurrency trader that uses technical analysis strategies to trade on live tick data provided by Coinbase"
-                        stack={["Python", "Flask", "ReactJS", "Websockets", "NumPy"]}
-                        years="2017-2018" />
-              </Col>
-              <Col md={6} className="my-2">
-                <ProjectCard title="ImgSite" 
-                        source_link="https://github.com/mcardillo55/imagesite"
-                        demo_link="https://www.michaeljcardillo.com/imgsite"
-                        image={ImgSite}
-                        description="Clone of Imgur. Image hosting service with user accounts."
-                        stack={["Python", "Django", "Bootstrap"]}
-                        years="2014" />
-              </Col>
-              <Col md={6} className="my-2">
-                <ProjectCard title="soundcloud-dj" 
-                        source_link="https://github.com/mcardillo55/soundcloud-dj"
-                        demo_link="https://www.michaeljcardillo.com/scdj"
-                        image={SCDJ}
-                        description="Parses a Facebook group with Graph API to locate and store SoundCloud and YouTube URLs. Songs are then displayed in their respective player via an AngularJS Frontend"
-                        stack={["Python", "Flask", "AngularJS", "SQLite", "SocketIO"]}
-                        years="2014" />
-              </Col>
-              <Col md={6} className="my-2">
-                <ProjectCard title="unfriended" 
-                        source_link="https://github.com/mcardillo55/unfriended-flask"
-                        image={Unfriended}
-                        description="Obtains and stores user's Facebook Friend List to be compared with lists on subsequent visits to display those who have removed you."
-                        stack={["Python", "Flask", "Bootstrap"]}
-                        years="2014" />
-              </Col>
-              <Col md={6} className="my-2">
-                <ProjectCard title="Student Space Programs Laboratory"
-                        stack={["C", "GTK+"]}
-                        image={SSPL}
-                        years="2010" 
-                        description="Developed front end interface to parse XML messages from a near-space satellite, which were then classified by severity and displayed in table" />
-              </Col>
+              {
+                projects_list.map((cur_project) => {
+                  return (
+                    <Col md={6} className="my-2">
+                      <ProjectCard title={cur_project.title}
+                              source_link={cur_project.source_link}
+                              demo_link={cur_project.demo_link}
+                              image={cur_project.image}
+                              description={cur_project.description}
+                              stack={cur_project.stack}
+                              years={cur_project.years} />
+                    </Col>
+                  )
+                })
+              }
             </Row>
         </div>
     </div>
