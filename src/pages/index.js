@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './index.css';
 import SEO from '../components/seo';
-import NameHeader from '../components/NameHeader';
-import CircleButtons from '../components/CircleButtons';
+import MainNavbar from '../components/MainNavbar';
 import ExperienceSection from '../components/ExperienceSection';
 import ProjectsSection from '../components/ProjectsSection';
 import FooterSection from '../components/FooterSection';
@@ -31,10 +30,7 @@ class IndexPage extends Component {
     <div>
       <SEO title="Home" />
       <Container>
-        <ScrollAnimation animateIn="fadeIn" animateOnce="True">
-          <NameHeader />
-          <CircleButtons onClick={this.handleCircleClick}/>
-        </ScrollAnimation>
+        <MainNavbar />
         <div id="content">
           <ScrollAnimation animateIn="fadeIn" animateOnce="True">
             <Row>
@@ -43,7 +39,7 @@ class IndexPage extends Component {
               </Col>
             </Row>
             <Row>
-                <Col id="projects" md={{span: 10, offset: 1}}>
+                <Col id="projects">
                   <ProjectsSection />
                 </Col>
             </Row>
@@ -51,14 +47,12 @@ class IndexPage extends Component {
           <ScrollAnimation animateIn="fadeIn" animateOnce="True">
             <div className="pb-5" >
               <Row>
-                <Col md={12}>
+                <Col>
                   <hr/>
                 </Col>
               </Row>
               <Row id="experience">
-                  <Col md={{span: 10, offset: 1}}>
                     <ExperienceSection />
-                  </Col>
               </Row>
             </div>
           </ScrollAnimation>

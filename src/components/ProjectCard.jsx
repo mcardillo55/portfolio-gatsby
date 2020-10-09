@@ -18,8 +18,8 @@ const ProjectCard = (props) => {
                     {props.description}
                 </Card.Text>
                 <div className="text-center">
-                    <Button className="mx-3" href={props.source_link} disabled={!props.source_link}>Source</Button>
-                    <Button className="mx-3" href={props.demo_link} disabled={!props.demo_link}>Demo</Button>
+                    <Button className="mx-3 btn-card" href={props.source_link} disabled={!props.source_link}>Source</Button>
+                    <Button className="mx-3 btn-card" href={props.demo_link} disabled={!props.demo_link}>Demo</Button>
                 </div>
             </Card.Body>
         </Card>

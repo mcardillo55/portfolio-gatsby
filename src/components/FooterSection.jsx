@@ -7,7 +7,7 @@ import Container from 'react-bootstrap/Container';
 const FooterSection = () => {
   return(  
     <footer className="footer" id="footer">
-        <Container id="footer-container" className="text-center text-muted">
+        <Container id="footer-container" className="text-center">
           <Row>
             <Col md={4}>
                 SF Bay Area, California &#8226; {new Date().getFullYear()}
