@@ -1,17 +1,18 @@
 h2, h3, h4, h6 {
-    color: #00687C;
+    color: #003E4A;
     font-weight: bold;
     font-family: 'Roboto Slab', serif;
 }
 
 #name {
+  color: #003E4A;
   font-size: 40px;
   font-weight: bold;
   font-family: 'Roboto Slab', serif;
 }
 
 a {
-  color: #00687C;
+  color: #2C8293;
 }
 
 html {
@@ -22,7 +23,7 @@ html {
 
 body {
     margin-bottom: 60px;
-    color: #00687C;
+    color: #00687D;
     font-family: "Roboto", sans-serif !important ;
 }
 
@@ -36,26 +37,27 @@ footer {
 
 .badge-primary {
   color: white;
-  background-color: #00687C;
+  background-color: #00687D;
 }
 
 .btn-card {
-  background-color: #00687C;
-  border-color: #00687C;
+  background-color: #00687D;
+  border-color: #00687D;
 }
 
 .btn-card:hover {
-  background-color: #004d5c;
+  background-color: #003E4A;
   border-color: #004d5c;
 }
 
 .btn-card:disabled {
-  background-color: #009dbd;
-  border-color: #009dbd;
+  background-color: #00A8C9;
+  border-color: #00A8C9;
 }
 
 .card-title {
-  color: #00687C;
+  color: #003E4A;
+  font-weight: bold;
   font-family: 'Roboto Slab', serif;
 }
 
@@ -73,12 +75,12 @@ footer {
 
 .navbar-custom .navbar-brand,
 .navbar-nav .nav-link {
-  color: #00687C;
+  color: #00687D;
   font-family: 'Roboto Slab', serif;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #004d5c;
+  color: #00A8C9;
   text-decoration: underline;
 }
 
@@ -89,9 +91,9 @@ footer {
 
 .navbar-toggler {
   color: white;
-  background-color: #00687C;
-  border-color: #00687C;
-  font-size: 28px;
+  background-color: #00687D;
+  border-color: #00687D;
+  font-size: 34px;
 }
 
 .project {
@@ -114,7 +116,7 @@ footer {
 
 #social-media a,
 #social-media i{
-    color: #00687C;
+    color: #00687D;
     margin-right: 3px;
     text-decoration: none;
 }
@@ -123,7 +125,7 @@ footer {
   position: fixed;
   top: 20px;
   right: 20px;
-  background: #00687C;
+  background: #00687D;
   color: white;
   border: none;
   text-decoration: none;

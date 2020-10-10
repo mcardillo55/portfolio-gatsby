@@ -1,12 +1,15 @@
 import React from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Image from 'react-bootstrap/Image';
 import { Link } from 'react-scroll';
+
+import NameLogo from '../images/name_logo.png'
 
 const MainNavbar = (props) => {
     return(
         <Navbar collapseOnSelect expand="lg" variant="custom">
-            <Navbar.Brand className="mr-auto" id="name">Michael Cardillo</Navbar.Brand>
+            <Navbar.Brand className="mr-auto" id="name"><Image src={NameLogo} /></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav">
                 <span>
                     <i className="fa fa-bars"></i>
