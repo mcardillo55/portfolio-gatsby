@@ -17,13 +17,13 @@ const MainNavbar = (props) => {
             <Navbar.Collapse>
                 <Nav className="ml-auto">
                     <Link href="#" to="projects" spy={true} smooth={true} hashSpy={true} duration={500} onClick={props.onClick}>
-                        <Nav.Link>Projects</Nav.Link>
+                        <Nav.Link>PROJECTS</Nav.Link>
                     </Link>
                     <Link href="#" to="experience" spy={true} smooth={true} hashSpy={true} duration={500} onClick={props.onClick}>
-                        <Nav.Link>Experience</Nav.Link>
+                        <Nav.Link>EXPERIENCE</Nav.Link>
                     </Link>
-                    <Nav.Link href="/mike_cardillo_resume.pdf">Resume</Nav.Link>
-                    <Nav.Link href="https://github.com/mcardillo55">GitHub</Nav.Link>
+                    <Nav.Link href="/mike_cardillo_resume.pdf">RESUME</Nav.Link>
+                    <Nav.Link href="https://github.com/mcardillo55">GITHUB</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
