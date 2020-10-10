@@ -23,7 +23,7 @@ html {
 
 body {
     margin-bottom: 60px;
-    color: #00687D;
+    color: #003E4A;
     font-family: "Roboto", sans-serif !important ;
 }
 
@@ -46,13 +46,13 @@ footer {
 }
 
 .btn-card:hover {
-  background-color: #003E4A;
-  border-color: #004d5c;
+  background-color: #00A8C9;
+  border-color: #00A8C9;
 }
 
 .btn-card:disabled {
-  background-color: #00A8C9;
-  border-color: #00A8C9;
+  background-color: #3CB2C9;
+  border-color: #3CB2C9;
 }
 
 .card-title {
@@ -77,11 +77,25 @@ footer {
 .navbar-nav .nav-link {
   color: #00687D;
   font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .navbar-nav .nav-link:hover {
   color: #00A8C9;
   text-decoration: underline;
+}
+
+.navbar-collapse.collapse,
+.navbar-collapse.collapsing {
+  text-align: right;
+}
+
+.navbar-collapse.collapse.show a:hover {
+  color: white;
+  background-color: #003E4A;
+  border-color: #003E4A;
+  text-decoration: none;
 }
 
 .navbar-custom {
@@ -91,8 +105,8 @@ footer {
 
 .navbar-toggler {
   color: white;
-  background-color: #00687D;
-  border-color: #00687D;
+  background-color: #003E4A;
+  border-color: #003E4A;
   font-size: 34px;
 }
 
@@ -116,7 +130,7 @@ footer {
 
 #social-media a,
 #social-media i{
-    color: #00687D;
+    color: #003E4A;
     margin-right: 3px;
     text-decoration: none;
 }
@@ -125,7 +139,7 @@ footer {
   position: fixed;
   top: 20px;
   right: 20px;
-  background: #00687D;
+  background: #003E4A;
   color: white;
   border: none;
   text-decoration: none;
