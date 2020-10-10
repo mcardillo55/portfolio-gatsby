@@ -11,7 +11,7 @@ const ExperienceSection = () => {
   return(
     <div id="experience">
         <div id="professional">
-            <h2>Professional</h2>
+            <h2>PROFESSIONAL</h2>
                 <Row className="px-3">
                     <Col className="border rounded" xs={12} md={{span:5, offset: 1}}>
                         <Job image={CiscoLogo}
@@ -31,7 +31,7 @@ const ExperienceSection = () => {
         </div>
         <hr />
         <div id="education">
-            <h2>Education</h2>
+            <h2>EDUCATION</h2>
             <Row>
                 <Col xs={12} md={{span:10, offset: 1}}>
                     <Row className="no-gutters border rounded pl-2">
@@ -48,7 +48,7 @@ const ExperienceSection = () => {
         </div>
         <hr />
         <div id="skills">
-            <h2>Technical Skills</h2>
+            <h2>TECHNICAL SKILLS</h2>
             <Row>
                 <Col sm={6}>
                     <h6 className="my-3 font-weight-bold">Programming Languages</h6>

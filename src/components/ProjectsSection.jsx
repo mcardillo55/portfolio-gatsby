@@ -57,7 +57,7 @@ const ProjectsSection = () => {
   return(
     <div id="projects">
         <div id="projects">
-            <h2>Projects</h2>
+            <h2>PROJECTS</h2>
             <Row className="mb-3">
               {
                 projects_list.map((cur_project) => {
