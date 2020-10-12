@@ -2,7 +2,7 @@ import React from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Image from 'react-bootstrap/Image';
-import { Link } from 'react-scroll';
+import { scroller } from 'react-scroll';
 
 import NameLogo from '../images/name_logo.png'
 
@@ -16,12 +16,20 @@ const MainNavbar = (props) => {
                 </span></Navbar.Toggle>
             <Navbar.Collapse>
                 <Nav className="ml-auto">
-                    <Link href="#" to="projects" spy={true} smooth={true} hashSpy={true} duration={500} onClick={props.onClick}>
-                        <Nav.Link eventKey="1">PROJECTS</Nav.Link>
-                    </Link>
-                    <Link href="#" to="experience" spy={true} smooth={true} hashSpy={true} duration={500} onClick={props.onClick}>
-                        <Nav.Link eventKey="2">EXPERIENCE</Nav.Link>
-                    </Link>
+                    <Nav.Link eventKey="1" onSelect={() => scroller.scrollTo('projects', {
+                        smooth: true,
+                        offset: -184,
+                        duration: 500
+                    })}>
+                        PROJECTS
+                    </Nav.Link>
+                    <Nav.Link eventKey="2" onSelect={() => scroller.scrollTo('experience', {
+                        smooth: true,
+                        offset: -184,
+                        duration: 500
+                    })}>
+                        EXPERIENCE
+                    </Nav.Link>
                     <Nav.Link eventKey="3" href="/mike_cardillo_resume.pdf">RESUME</Nav.Link>
                     <Nav.Link eventKey="4" href="https://github.com/mcardillo55">GITHUB</Nav.Link>
                 </Nav>
