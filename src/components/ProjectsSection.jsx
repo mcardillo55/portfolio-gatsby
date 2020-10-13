@@ -2,6 +2,7 @@ import React from 'react';
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import ProjectCard from './ProjectCard'
+import ProjectImageModal from './ProjectImageModal'
 import CBPro from '../images/cbprotrader.png'
 import SCDJ from '../images/soundclouddj.png'
 import Unfriended from '../images/unfriended.png'
@@ -64,10 +65,20 @@ const projects_list =
     }
   ]
 const ProjectsSection = () => {
+  const [showModal, setShowModal] = React.useState(false);
+  const [modalSrc, setModalSrc] = React.useState("");
+
+  const handleCloseModal = () => setShowModal(false);
+  const handleShowModal = (e) => {setModalSrc(e.target.src); setShowModal(true)};
+
   return(
     <div id="projects">
         <div id="projects">
             <h2>PROJECTS</h2>
+            <ProjectImageModal show={showModal}
+                               src={modalSrc}
+                               handleShow={handleShowModal} 
+                               handleClose={handleCloseModal} />
             <Row className="mb-3">
               {
                 projects_list.map((cur_project) => {
@@ -77,6 +88,7 @@ const ProjectsSection = () => {
                               source_link={cur_project.source_link}
                               demo_link={cur_project.demo_link}
                               image={cur_project.image}
+                              image_modal_handler={handleShowModal}
                               description={cur_project.description}
                               stack={cur_project.stack}
                               years={cur_project.years} />

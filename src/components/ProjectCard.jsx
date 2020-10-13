@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button'
 const ProjectCard = (props) => {
     return(
         <Card className="h-100">
-            <Card.Img variant="top" src={props.image} />
+            <Card.Img variant="top" src={props.image} onClick={props.image_modal_handler}/>
             <Card.Body>
                 <Card.Title>{props.title}</Card.Title>
                 <Card.Subtitle>
