@@ -7,6 +7,7 @@ import SCDJ from '../images/soundclouddj.png'
 import Unfriended from '../images/unfriended.png'
 import SSPL from '../images/sspl.png'
 import ImgSite from '../images/imgsite.png'
+import AQI from '../images/aqi.png'
 
 const projects_list = 
   [
@@ -27,6 +28,15 @@ const projects_list =
       description: "Clone of Imgur. Image hosting service with user accounts.",
       stack: ["Python", "Django", "Bootstrap"],
       years: "2016"
+    },
+    {
+      title: "Air Quality GNOME Extension",
+      source_link: "https://github.com/mcardillo55/gnome-shell-extension-air-quality",
+      demo_link: "https://extensions.gnome.org/extension/3574/air-quality/",
+      image: AQI,
+      description: "A GNOME Desktop extension that locates and displays air quality from local PurpleAir sensors",
+      stack: ["JavaScript", "GJS", "GNOME"],
+      years: 2020
     },
     {
       title: "soundcloud-dj",
