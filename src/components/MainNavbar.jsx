@@ -16,22 +16,29 @@ const MainNavbar = (props) => {
                 </span></Navbar.Toggle>
             <Navbar.Collapse>
                 <Nav className="ml-auto">
-                    <Nav.Link eventKey="1" onSelect={() => scroller.scrollTo('projects', {
+                    <Nav.Link eventKey="1" onSelect={() => scroller.scrollTo('about', {
+                        smooth: true,
+                        offset: -184,
+                        duration: 500
+                    })}>
+                        ABOUT
+                    </Nav.Link>
+                    <Nav.Link eventKey="2" onSelect={() => scroller.scrollTo('projects', {
                         smooth: true,
                         offset: -184,
                         duration: 500
                     })}>
                         PROJECTS
                     </Nav.Link>
-                    <Nav.Link eventKey="2" onSelect={() => scroller.scrollTo('experience', {
+                    <Nav.Link eventKey="3" onSelect={() => scroller.scrollTo('experience', {
                         smooth: true,
                         offset: -184,
                         duration: 500
                     })}>
                         EXPERIENCE
                     </Nav.Link>
-                    <Nav.Link eventKey="3" href="/mike_cardillo_resume.pdf">RESUME</Nav.Link>
-                    <Nav.Link eventKey="4" href="https://github.com/mcardillo55">GITHUB</Nav.Link>
+                    <Nav.Link eventKey="4" href="/mike_cardillo_resume.pdf">RESUME</Nav.Link>
+                    <Nav.Link eventKey="5" href="https://github.com/mcardillo55">GITHUB</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

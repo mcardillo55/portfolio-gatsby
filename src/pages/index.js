@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './index.css';
 import SEO from '../components/seo';
 import MainNavbar from '../components/MainNavbar';
+import AboutSection from '../components/AboutSection';
 import ExperienceSection from '../components/ExperienceSection';
 import ProjectsSection from '../components/ProjectsSection';
 import FooterSection from '../components/FooterSection';
@@ -38,6 +39,16 @@ class IndexPage extends Component {
                 <hr/>
               </Col>
             </Row>
+            <Row>
+                <Col id="about">
+                  <AboutSection />
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                  <hr/>
+                </Col>
+              </Row>
             <Row>
                 <Col id="projects">
                   <ProjectsSection />
