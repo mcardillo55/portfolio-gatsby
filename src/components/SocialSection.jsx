@@ -1,34 +1,23 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Col from 'react-bootstrap/Col';
 
-class SocialSection extends Component {
-    constructor() {
-        super()
-        this.state = {
-            email_visible: false 
-        }
-    }
-    toggleEmail = () => {
-        if (this.state.email_visible) {
-            this.setState({email_visible: false})
-        } else {
-            this.setState({email_visible: true})
-        }
-    }
-    render() {
-        return (
-            <Col id="social-media" md={{span: 4, offset: 4}}>
-                <a href="https://www.linkedin.com/in/mcardillo55">
-                    <i className="fa fa-linkedin-square fa-lg"></i>
-                </a>
-                <a href="https://twitter.com/mcardillo55">
-                    <i className="fa fa-twitter-square fa-lg"></i>
-                </a>
-                <i className="fa fa-envelope fa-lg" onClick={this.toggleEmail}></i>
-                {this.state.email_visible ? <span id="email-address">mcardillo55@gmail.com</span> : null}
-            </Col>
-        )
-    }
+const SocialSection = () => {
+    return (
+        <Col id="social-media"  md={{span: 4, offset: 4}}>
+            <a href="https://www.linkedin.com/in/mcardillo55">
+                <i className="fa fa-linkedin-square fa-lg d-none d-md-inline-block" />
+                <i className="fa fa-linkedin-square fa-3x d-md-none mx-1" />
+            </a>
+            <a href="https://twitter.com/mcardillo55">
+                <i className="fa fa-twitter-square fa-lg d-none d-md-inline-block" />
+                <i className="fa fa-twitter-square fa-3x d-md-none mx-1" />
+            </a>
+            <a href="mailto:mcardillo55@gmail.com">
+                <i className="fa fa-envelope-square fa-lg d-none d-md-inline-block" />
+                <i className="fa fa-envelope-square fa-3x d-md-none mx-1" />
+            </a>
+        </Col>
+    )
 };
 
 export default SocialSection;
