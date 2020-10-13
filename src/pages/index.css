@@ -61,10 +61,6 @@ footer {
   font-family: 'Roboto Slab', serif;
 }
 
-.container {
-    max-width: 992px;
-}
-
 .col-center {
     margin: 0 auto;
 }

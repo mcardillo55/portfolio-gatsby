@@ -1,4 +1,5 @@
 import React from 'react';
+import Container from 'react-bootstrap/Container';
 import ListGroup from 'react-bootstrap/ListGroup';
 import CiscoLogo from '../images/cisco_logo.png';
 import PSULogo from '../images/psu_logo.png';
@@ -9,7 +10,7 @@ import Job from './Job';
 
 const ExperienceSection = () => {
   return(
-    <div id="experience">
+    <Container id="experience">
         <div id="professional">
             <h2>PROFESSIONAL</h2>
                 <Row className="px-3">
@@ -88,7 +89,7 @@ const ExperienceSection = () => {
                 </Col>
             </Row>
         </div>
-    </div>
+    </Container>
   )
 };
 
