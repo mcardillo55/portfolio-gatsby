@@ -39,7 +39,7 @@ class IndexPage extends Component {
                 <hr/>
               </Col>
             </Row>
-            <Row className="my-5 pb-5">
+            <Row className="my-5 pb-4">
                 <Col id="about">
                   <AboutSection />
                 </Col>
