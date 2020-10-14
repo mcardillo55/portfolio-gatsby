@@ -31,23 +31,6 @@ const ExperienceSection = () => {
                 </Row>
         </div>
         <hr />
-        <div id="education">
-            <h2>EDUCATION</h2>
-            <Row>
-                <Col xs={12} md={{span:10, offset: 1}}>
-                    <Row className="no-gutters border rounded pl-2">
-                        <Col xs={2}>
-                            <Image className="heading-image" src={PSULogo} alt="Penn State Logo" fluid/>
-                        </Col>
-                        <Col xs={7} className="pl-2">
-                            <h5 className="font-weight-bold">Pennsylvania State University</h5>
-                            <h6>B.S. Computer Engineering, June 2011</h6>
-                        </Col>
-                    </Row>
-                </Col>
-            </Row>
-        </div>
-        <hr />
         <div id="skills">
             <h2>TECHNICAL SKILLS</h2>
             <Row>
