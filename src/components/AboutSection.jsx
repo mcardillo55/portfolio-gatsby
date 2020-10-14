@@ -7,13 +7,13 @@ import Image from 'react-bootstrap/Image';
 const AboutSection = () => {
     return(
         <div>
-            <h2 className="text-center">Hello, World!</h2>
+            <h1 id="hello-world" className="text-center">Hello, World!</h1>
             <Row>
                 <Col md={{span: 10, offset: 1}}>
-                    <p className="text-center">I'm Michael, a software engineer in the San Francisco Bay Area.</p>
+                    <h4 className="text-center mb-4">I'm Michael, a software engineer in the San Francisco Bay Area.</h4>
                 <Row>
                     <Col xs={{span: 12, order: 2}} md={{span: 7, offset:0, order: 1}}>
-                        <p>I earned a Bachelor of Science in Computer Engineering from Penn State University, and I've worked in a variety of areas, from web
+                        <p>I hold a Bachelor of Science in Computer Engineering from Penn State University, and I've worked in a variety of areas, from web
                         development to Linux kernel development. Outside of coding, I enjoy gaming, <a href="https://www.strava.com/athletes/5396583">hiking
                         and cycling.</a>
                         </p>

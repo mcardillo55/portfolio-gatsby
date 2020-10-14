@@ -133,6 +133,11 @@ footer {
     margin-top: 15px;
 }
 
+#hello-world {
+  font-family: 'Courier', Courier, monospace;
+  font-weight: bold;
+}
+
 #page-wrap {
     padding-bottom: 30px;
 }
