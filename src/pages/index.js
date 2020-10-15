@@ -4,7 +4,7 @@ import SEO from '../components/seo';
 import MainNavbar from '../components/MainNavbar';
 import AboutSection from '../components/AboutSection';
 import SkillsSection from '../components/SkillsSection';
-import ProjectsSection from '../components/ProjectsSection';
+import WorkSection from '../components/WorkSection';
 import FooterSection from '../components/FooterSection';
 import ReturnToTopButton from '../components/ReturnToTopButton';
 import Container from 'react-bootstrap/Container';
@@ -64,8 +64,8 @@ class IndexPage extends Component {
                 </Col>
               </Row>
             <Row>
-                <Col id="projects">
-                  <ProjectsSection />
+                <Col id="work">
+                  <WorkSection />
                 </Col>
             </Row>
           </ScrollAnimation>

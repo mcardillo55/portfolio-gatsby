@@ -73,7 +73,7 @@ const projects_list =
       years: "2010"
     }
   ]
-const ProjectsSection = () => {
+const WorkSection = () => {
   const [showModal, setShowModal] = React.useState(false);
   const [modalSrc, setModalSrc] = React.useState("");
 
@@ -83,7 +83,7 @@ const ProjectsSection = () => {
   return(
     <div id="projects">
         <div id="projects">
-            <h2>PROJECTS</h2>
+            <h2>WORK</h2>
             <ProjectImageModal show={showModal}
                                src={modalSrc}
                                handleShow={handleShowModal} 
@@ -112,4 +112,4 @@ const ProjectsSection = () => {
   )
 }
 
-export default ProjectsSection;
+export default WorkSection;
