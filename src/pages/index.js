@@ -3,7 +3,7 @@ import './index.css';
 import SEO from '../components/seo';
 import MainNavbar from '../components/MainNavbar';
 import AboutSection from '../components/AboutSection';
-import ExperienceSection from '../components/ExperienceSection';
+import SkillsSection from '../components/SkillsSection';
 import ProjectsSection from '../components/ProjectsSection';
 import FooterSection from '../components/FooterSection';
 import ReturnToTopButton from '../components/ReturnToTopButton';
@@ -44,6 +44,20 @@ class IndexPage extends Component {
                   <AboutSection />
                 </Col>
             </Row>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeIn" animateOnce="True">
+            <div className="pb-3" >
+              <Row>
+                <Col>
+                  <hr/>
+                </Col>
+              </Row>
+              <Row id="skills">
+                    <SkillsSection />
+              </Row>
+            </div>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeIn" animateOnce="True">
             <Row>
                 <Col>
                   <hr/>
@@ -54,18 +68,6 @@ class IndexPage extends Component {
                   <ProjectsSection />
                 </Col>
             </Row>
-          </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeIn" animateOnce="True">
-            <div className="pb-5" >
-              <Row>
-                <Col>
-                  <hr/>
-                </Col>
-              </Row>
-              <Row id="skills">
-                    <ExperienceSection />
-              </Row>
-            </div>
           </ScrollAnimation>
         </div>
       </Container>

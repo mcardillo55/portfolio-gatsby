@@ -128,6 +128,16 @@ footer {
   padding-bottom: 5px;
 }
 
+.skill-circle {
+  color: white;
+  background-color: #003E4A;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  padding-top: 12px;
+  display: inline-block;
+}
+
 .small-nav {
   background: #4CE2FF;
   font-size: 30px;
