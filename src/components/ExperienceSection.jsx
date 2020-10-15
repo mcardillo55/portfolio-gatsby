@@ -1,8 +1,6 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import ListGroup from 'react-bootstrap/ListGroup';
-import CiscoLogo from '../images/cisco_logo.png';
-import PSULogo from '../images/psu_logo.png';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
@@ -11,26 +9,6 @@ import Job from './Job';
 const ExperienceSection = () => {
   return(
     <Container id="experience">
-        <div id="professional">
-            <h2>PROFESSIONAL</h2>
-                <Row className="px-3">
-                    <Col className="border rounded" xs={12} md={{span:5, offset: 1}}>
-                        <Job image={CiscoLogo}
-                             company="Cisco Systems"
-                             location="San Jose, CA"
-                             title="Software Engineer - Kernel"
-                             years="September 2011-September 2016" />
-                    </Col>
-                    <Col className="border rounded mt-2 mt-md-0" xs={12} md={{span:5, offset:1}}>
-                        <Job image={CiscoLogo}
-                             company="Cisco Systems"
-                             location="San Jose, CA"
-                             title="CDO Choice Intern"
-                             years="May 2010-August 2010" />
-                    </Col>
-                </Row>
-        </div>
-        <hr />
         <div id="skills">
             <h2>TECHNICAL SKILLS</h2>
             <Row>
