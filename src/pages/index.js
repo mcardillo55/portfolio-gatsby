@@ -46,7 +46,7 @@ class IndexPage extends Component {
             </Row>
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeIn" animateOnce="True">
-            <div className="pb-3" >
+            <div>
               <Row>
                 <Col>
                   <hr/>
