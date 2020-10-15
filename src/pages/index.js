@@ -63,7 +63,7 @@ class IndexPage extends Component {
                   <hr/>
                 </Col>
               </Row>
-            <Row>
+            <Row className="pb-5">
                 <Col id="work">
                   <WorkSection />
                 </Col>
