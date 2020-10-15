@@ -3,6 +3,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import ProjectCard from './ProjectCard'
 import ProjectImageModal from './ProjectImageModal'
+import CiscoLogo from '../images/cisco_logo.svg';
 import CBPro from '../images/cbprotrader.png'
 import SCDJ from '../images/soundclouddj.png'
 import Unfriended from '../images/unfriended.png'
@@ -29,6 +30,13 @@ const projects_list =
       description: "Clone of Imgur. Image hosting service with user accounts.",
       stack: ["Python", "Django", "Bootstrap"],
       years: "2016"
+    },
+    {
+      title: "Cisco Systems",
+      image: CiscoLogo,
+      image_pad: true,
+      description: "Implemeted kernel features such as a system page, OS hardening, upstream patch merge automation, and urgent CVE patching",
+      stack: ["Python", 'Bash', "C", "Yocto"]
     },
     {
       title: "Air Quality GNOME Extension",
