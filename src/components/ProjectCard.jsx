@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button'
 
 const ProjectCard = (props) => {
     return(
-        <Card>
+        <Card className="h-100">
             { props.image && 
                 <Card.Img className={props.image_pad && "card-img-padded"} variant="top" src={props.image} onClick={props.image_modal_handler}/>
             }
