@@ -18,7 +18,7 @@ const projects_list =
       source_link: "https://github.com/mcardillo55/cbpro-trader",
       demo_link: "https://www.michaeljcardillo.com/cbpro/",
       image: CBPro,
-      description: "Automated cryptocurrency trader that uses technical analysis strategies to trade on live tick data provided by Coinbase",
+      description: "Automated cryptocurrency trader that uses technical analysis strategies to trade on live tick data provided by Coinbase.",
       stack: ["Python", "Flask", "ReactJS", "Websockets", "NumPy"],
       years: "2017-2018"
     },
@@ -27,7 +27,7 @@ const projects_list =
       source_link: "https://github.com/mcardillo55/imagesite",
       demo_link: "https://www.michaeljcardillo.com/imgsite",
       image: ImgSite,
-      description: "Clone of Imgur. Image hosting service with user accounts.",
+      description: "Clone of Imgur - an image hosting service with user accounts.",
       stack: ["Python", "Django", "Bootstrap"],
       years: "2016"
     },
@@ -35,7 +35,7 @@ const projects_list =
       title: "Cisco Systems",
       image: CiscoLogo,
       image_pad: true,
-      description: "Implemeted kernel features such as a system page, OS hardening, upstream patch merge automation, and urgent CVE patching",
+      description: "Implemeted kernel features such as a system page, OS hardening, upstream patch merge automation, and urgent CVE patching.",
       stack: ["Python", 'Bash', "C", "Yocto"]
     },
     {
@@ -43,7 +43,7 @@ const projects_list =
       source_link: "https://github.com/mcardillo55/gnome-shell-extension-air-quality",
       demo_link: "https://extensions.gnome.org/extension/3574/air-quality/",
       image: AQI,
-      description: "A GNOME Desktop extension that locates and displays air quality from local PurpleAir sensors",
+      description: "A GNOME Desktop extension that locates and displays air quality from local PurpleAir sensors.",
       stack: ["JavaScript", "GJS", "GNOME"],
       years: 2020
     },
@@ -52,7 +52,7 @@ const projects_list =
       source_link: "https://github.com/mcardillo55/soundcloud-dj",
       demo_link: "https://www.michaeljcardillo.com/scdj",
       image: SCDJ,
-      description: "Parses a Facebook group with Graph API to locate and store SoundCloud and YouTube URLs. Songs are then displayed in their respective player via an AngularJS Frontend",
+      description: "Parses a Facebook group with Graph API to locate and store SoundCloud and YouTube URLs. Songs are then displayed in their respective player via an AngularJS Frontend.",
       stack: ["Python", "Flask", "AngularJS", "SQLite", "SocketIO"],
       years: "2014"
     },
@@ -68,7 +68,7 @@ const projects_list =
       title: "Student Space Programs Laboratory",
       image: SSPL,
       image_pad: true,
-      description: "Developed front end interface to parse XML messages from a near-space satellite, which were then classified by severity and displayed in table",
+      description: "Developed front end interface to parse XML messages from a near-space satellite, which were then classified by severity and displayed in table.",
       stack: ["C", "GTK+"],
       years: "2010"
     }
