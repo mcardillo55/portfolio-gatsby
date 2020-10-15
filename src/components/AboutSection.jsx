@@ -17,17 +17,17 @@ const AboutSection = () => {
                         </Col>
                     </Row>
                     <Row className="mb-4">
-                        <Col className="pt-4" xs={{span: 12, order: 1}} md={{span: 6, offset:0, order: 2}}>
+                        <Col xs={{span: 12, order: 1}} md={{span: 6, offset:0, order: 2}}>
                             <p>I received a Bachelor of Science in Computer Engineering from Penn State University, and I've worked in a variety of areas, from web
                             development to Linux kernel development. Outside of coding, I enjoy gaming, <a href="https://www.strava.com/athletes/5396583">hiking
                             and cycling.</a>
                             </p>
                         </Col>
                         <Col xs={{span:6, offset:0, order: 3}} md={{span: 3, offset:0, order: 3}}>
-                                <Image src={HalfDome} fluid roundedCircle/>
+                                <Image src={HalfDome} fluid rounded/>
                         </Col>
                         <Col xs={{span:6, offset:0, order: 2}} md={{span: 3, offset:0, order: 1}}>
-                                <Image className="pt-4" src={PSULogo} fluid/>
+                                <Image src={PSULogo} fluid/>
                         </Col>
                         
                     </Row>
