@@ -59,6 +59,7 @@ const projects_list =
     {
       title: "Student Space Programs Laboratory",
       image: SSPL,
+      image_pad: true,
       description: "Developed front end interface to parse XML messages from a near-space satellite, which were then classified by severity and displayed in table",
       stack: ["C", "GTK+"],
       years: "2010"
