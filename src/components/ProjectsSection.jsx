@@ -88,6 +88,7 @@ const ProjectsSection = () => {
                               source_link={cur_project.source_link}
                               demo_link={cur_project.demo_link}
                               image={cur_project.image}
+                              image_pad={cur_project.image_pad}
                               image_modal_handler={handleShowModal}
                               description={cur_project.description}
                               stack={cur_project.stack}
