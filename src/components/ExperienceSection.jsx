@@ -10,7 +10,7 @@ const ExperienceSection = () => {
   return(
     <Container id="experience">
         <div id="skills">
-            <h2>TECHNICAL SKILLS</h2>
+            <h2>SKILLS</h2>
             <Row>
                 <Col sm={6}>
                     <h6 className="my-3 font-weight-bold">Programming Languages</h6>

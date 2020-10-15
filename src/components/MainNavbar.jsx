@@ -37,12 +37,12 @@ const MainNavbar = (props) => {
                     })}>
                         PROJECTS
                     </Nav.Link>
-                    <Nav.Link eventKey="3" onSelect={() => scroller.scrollTo('experience', {
+                    <Nav.Link eventKey="3" onSelect={() => scroller.scrollTo('skills', {
                         smooth: true,
                         offset: getOffset(),
                         duration: 500
                     })}>
-                        EXPERIENCE
+                        SKILLS
                     </Nav.Link>
                     <Nav.Link eventKey="4" href="/mike_cardillo_resume.pdf">RESUME</Nav.Link>
                     <Nav.Link eventKey="5" href="https://github.com/mcardillo55">GITHUB</Nav.Link>

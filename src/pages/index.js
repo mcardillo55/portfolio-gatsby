@@ -62,7 +62,7 @@ class IndexPage extends Component {
                   <hr/>
                 </Col>
               </Row>
-              <Row id="experience">
+              <Row id="skills">
                     <ExperienceSection />
               </Row>
             </div>
