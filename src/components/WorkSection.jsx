@@ -92,7 +92,7 @@ const WorkSection = () => {
               {
                 projects_list.map((cur_project) => {
                   return (
-                    <Col md={6} className="my-2">
+                    <Col md={6} lg={4} className="my-2">
                       <ProjectCard title={cur_project.title}
                               source_link={cur_project.source_link}
                               demo_link={cur_project.demo_link}
