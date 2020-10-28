@@ -17,42 +17,42 @@ const WorkSection = () => {
     `query{
       cbproImage: file(relativePath: { eq: "cbprotrader.png" }) {
         childImageSharp {
-            fluid {
+            fluid(maxWidth: 1600) {
                 ...GatsbyImageSharpFluid
             }
         }
       },
       scdjImage: file(relativePath: { eq: "soundclouddj.png" }) {
         childImageSharp {
-            fluid {
+          fluid(maxWidth: 1600) {
                 ...GatsbyImageSharpFluid
             }
         }
       },
       unfriended: file(relativePath: { eq: "unfriended.png" }) {
         childImageSharp {
-            fluid {
+          fluid(maxWidth: 1600) {
                 ...GatsbyImageSharpFluid
             }
         }
       },
       ssplImage: file(relativePath: { eq: "sspl.png" }) {
         childImageSharp {
-            fluid {
+          fluid(maxWidth: 1600) {
                 ...GatsbyImageSharpFluid
             }
         }
       },
       imgsiteImage: file(relativePath: { eq: "imgsite.png" }) {
         childImageSharp {
-            fluid {
+          fluid(maxWidth: 1600) {
                 ...GatsbyImageSharpFluid
             }
         }
       },
       aqiImage: file(relativePath: { eq: "aqi.png" }) {
         childImageSharp {
-            fluid {
+          fluid(maxWidth: 1600) {
                 ...GatsbyImageSharpFluid
             }
         }
