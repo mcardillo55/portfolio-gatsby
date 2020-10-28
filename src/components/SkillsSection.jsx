@@ -14,7 +14,7 @@ const SkillsSection = () => {
                     <div className="border rounded py-3 px-4">
                         <div className="text-center">
                             <div className="skill-circle">
-                                <i class="far fa-file-code fa-2x"></i>
+                                <i class="fas fa-file-code fa-2x"></i>
                             </div>
                         </div>
                         <h6 className="mb-2 font-weight-bold text-center">Frontend</h6>
