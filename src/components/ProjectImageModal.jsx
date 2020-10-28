@@ -1,6 +1,7 @@
 import React from 'react';
 import Modal from 'react-bootstrap/Modal'
 import Image from 'react-bootstrap/Image'
+import Img from 'gatsby-image';
 
 const ProjectImageModal = (props) => {
     return (
@@ -12,7 +13,8 @@ const ProjectImageModal = (props) => {
                centered >
             <Modal.Header closeButton/>
             <Modal.Body>
-                <Image src={props.src} fluid />
+                { typeof(props.src) == 'object' && <Img fluid={props.src} /> ||
+                  <Image src={props.src} fluid/> }
             </Modal.Body>
         </Modal>
     );

@@ -1,10 +1,9 @@
 import React, {useRef} from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Image from 'react-bootstrap/Image';
+import Img from 'gatsby-image';
+import { graphql, useStaticQuery } from 'gatsby';
 import { scroller } from 'react-scroll';
-
-import NameLogo from '../images/name_logo.png'
 
 const MainNavbar = (props) => {
     let collapse_ref = useRef(null);
@@ -14,9 +13,21 @@ const MainNavbar = (props) => {
         return (offset < 50 ? 0 : offset * -1)
     }
 
+    const data = useStaticQuery(graphql`
+    query{
+        nameLogoImage: file(relativePath: { eq: "name_logo.png" }) {
+                            childImageSharp {
+                                fixed {
+                                    ...GatsbyImageSharpFixed
+                                }
+                            }
+        }
+    }
+    `)
+
     return(
         <Navbar collapseOnSelect expand="lg" variant="custom">
-            <Navbar.Brand className="mr-auto" id="name"><Image src={NameLogo} /></Navbar.Brand>
+            <Navbar.Brand className="mr-auto" id="name"><Img fixed={data.nameLogoImage.childImageSharp.fixed} /></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav">
                 <span>
                     <i className="fa fa-bars"></i>

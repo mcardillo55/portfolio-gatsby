@@ -2,12 +2,14 @@ import React from 'react';
 import Badge from 'react-bootstrap/Badge'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
+import Img from 'gatsby-image';
 
 const ProjectCard = (props) => {
     return(
-        <Card className="h-100">
+        <Card className="h-100" onClick={() => props.image_modal_handler(props.image)}>
             { props.image && 
-                <Card.Img className={props.image_pad && "card-img-padded"} variant="top" src={props.image} onClick={props.image_modal_handler}/>
+                (typeof(props.image) == 'object' && <Img className={props.image_pad && "card-img-padded"} fluid={props.image} />) ||
+                <Card.Img className={props.image_pad && "card-img-padded"} variant="top" src={props.image}/>
             }
             <Card.Body>
                 <Card.Title>{props.title}</Card.Title>

@@ -1,11 +1,28 @@
 import React from 'react';
-import HalfDome from '../images/halfdome.jpg';
-import PSULogo from '../images/psu_logo.png';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
+import Img from 'gatsby-image';
+import { graphql, useStaticQuery } from 'gatsby';
 
 const AboutSection = () => {
+    const data = useStaticQuery(graphql`
+    query{
+        psuLogoImage: file(relativePath: { eq: "psu_logo.png" }) {
+                            childImageSharp {
+                                fluid {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+        }
+        halfDomeImage: file(relativePath: { eq: "halfdome.jpg" }) {
+                            childImageSharp {
+                                fluid {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+        }
+    }
+    `)
     return(
         <div>
             <h1 id="hello-world" className="text-center">Hello, World!</h1>
@@ -24,10 +41,10 @@ const AboutSection = () => {
                             </p>
                         </Col>
                         <Col className="my-auto" xs={{span:6, offset:0, order: 3}} lg={{span: 3, offset:0, order: 3}}>
-                                <Image src={HalfDome} fluid rounded/>
+                            <Img fluid={data.halfDomeImage.childImageSharp.fluid} />
                         </Col>
                         <Col className="my-auto" xs={{span:6, offset:0, order: 2}} lg={{span: 3, offset:0, order: 1}}>
-                                <Image  src={PSULogo} fluid/>
+                            <Img fluid={data.psuLogoImage.childImageSharp.fluid} />
                         </Col>
                         
                     </Row>

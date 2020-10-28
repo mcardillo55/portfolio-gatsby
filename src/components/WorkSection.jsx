@@ -3,21 +3,70 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import ProjectCard from './ProjectCard'
 import ProjectImageModal from './ProjectImageModal'
+import { graphql, useStaticQuery } from 'gatsby';
 import CiscoLogo from '../images/cisco_logo.svg';
-import CBPro from '../images/cbprotrader.png'
-import SCDJ from '../images/soundclouddj.png'
-import Unfriended from '../images/unfriended.png'
-import SSPL from '../images/sspl.png'
-import ImgSite from '../images/imgsite.png'
-import AQI from '../images/aqi.png'
 
-const projects_list = 
+const WorkSection = () => {
+  const [showModal, setShowModal] = React.useState(false);
+  const [modalSrc, setModalSrc] = React.useState("");
+
+  const handleCloseModal = () => setShowModal(false);
+  const handleShowModal = (src) => { setModalSrc(src); setShowModal(true) };
+  
+  const data = useStaticQuery(graphql
+    `query{
+      cbproImage: file(relativePath: { eq: "cbprotrader.png" }) {
+        childImageSharp {
+            fluid {
+                ...GatsbyImageSharpFluid
+            }
+        }
+      },
+      scdjImage: file(relativePath: { eq: "soundclouddj.png" }) {
+        childImageSharp {
+            fluid {
+                ...GatsbyImageSharpFluid
+            }
+        }
+      },
+      unfriended: file(relativePath: { eq: "unfriended.png" }) {
+        childImageSharp {
+            fluid {
+                ...GatsbyImageSharpFluid
+            }
+        }
+      },
+      ssplImage: file(relativePath: { eq: "sspl.png" }) {
+        childImageSharp {
+            fluid {
+                ...GatsbyImageSharpFluid
+            }
+        }
+      },
+      imgsiteImage: file(relativePath: { eq: "imgsite.png" }) {
+        childImageSharp {
+            fluid {
+                ...GatsbyImageSharpFluid
+            }
+        }
+      },
+      aqiImage: file(relativePath: { eq: "aqi.png" }) {
+        childImageSharp {
+            fluid {
+                ...GatsbyImageSharpFluid
+            }
+        }
+      }
+  }`
+  )
+
+  const projects_list = 
   [
     {
       title: "cbpro-trader",
       source_link: "https://github.com/mcardillo55/cbpro-trader",
       demo_link: "https://www.michaeljcardillo.com/cbpro/",
-      image: CBPro,
+      image: data.cbproImage.childImageSharp.fluid,
       description: "Automated cryptocurrency trader that uses technical analysis strategies to trade on live tick data provided by Coinbase.",
       stack: ["Python", "Flask", "ReactJS", "Websockets", "NumPy"],
       years: "2017-2018"
@@ -26,7 +75,7 @@ const projects_list =
       title: "ImgSite",
       source_link: "https://github.com/mcardillo55/imagesite",
       demo_link: "https://www.michaeljcardillo.com/imgsite",
-      image: ImgSite,
+      image: data.imgsiteImage.childImageSharp.fluid,
       description: "Clone of Imgur - an image hosting service with user accounts.",
       stack: ["Python", "Django", "Bootstrap"],
       years: "2016"
@@ -42,7 +91,7 @@ const projects_list =
       title: "Air Quality GNOME Extension",
       source_link: "https://github.com/mcardillo55/gnome-shell-extension-air-quality",
       demo_link: "https://extensions.gnome.org/extension/3574/air-quality/",
-      image: AQI,
+      image: data.aqiImage.childImageSharp.fluid,
       description: "A GNOME Desktop extension that locates and displays air quality from local PurpleAir sensors.",
       stack: ["JavaScript", "GJS", "GNOME"],
       years: 2020
@@ -51,7 +100,7 @@ const projects_list =
       title: "soundcloud-dj",
       source_link: "https://github.com/mcardillo55/soundcloud-dj",
       demo_link: "https://www.michaeljcardillo.com/scdj",
-      image: SCDJ,
+      image: data.scdjImage.childImageSharp.fluid,
       description: "Parses a Facebook group with Graph API to locate and store SoundCloud and YouTube URLs. Songs are then displayed in their respective player via an AngularJS Frontend.",
       stack: ["Python", "Flask", "AngularJS", "SQLite", "SocketIO"],
       years: "2014"
@@ -59,26 +108,20 @@ const projects_list =
     {
       title: "unfriended",
       source_link: "https://github.com/mcardillo55/unfriended-flask",
-      image: Unfriended,
+      image: data.unfriended.childImageSharp.fluid,
       description: "Obtains and stores user's Facebook Friend List to be compared with lists on subsequent visits to display those who have removed you.",
       stack: ["Python", "Flask", "Bootstrap"],
       years: "2014"
     },
     {
       title: "Student Space Programs Laboratory",
-      image: SSPL,
+      image: data.ssplImage.childImageSharp.fluid,
       image_pad: true,
       description: "Developed front end interface to parse XML messages from a near-space satellite, which were then classified by severity and displayed in table.",
       stack: ["C", "GTK+"],
       years: "2010"
     }
   ]
-const WorkSection = () => {
-  const [showModal, setShowModal] = React.useState(false);
-  const [modalSrc, setModalSrc] = React.useState("");
-
-  const handleCloseModal = () => setShowModal(false);
-  const handleShowModal = (e) => {setModalSrc(e.target.src); setShowModal(true)};
 
   return(
     <div id="projects">
