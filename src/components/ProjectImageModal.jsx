@@ -13,8 +13,9 @@ const ProjectImageModal = (props) => {
                centered >
             <Modal.Header closeButton/>
             <Modal.Body>
-                { typeof(props.src) == 'object' && <Img fluid={props.src} /> ||
-                  <Image src={props.src} fluid/> }
+                { // If type is 'object', it is from gatsby-image, otherwise it is SVG
+                  typeof(props.src) == 'object' && <Img fluid={props.src} /> ||
+                  <Image src={props.src} style={{'width': '50%'}} fluid/> }
             </Modal.Body>
         </Modal>
     );
