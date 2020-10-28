@@ -15,7 +15,7 @@ const MainNavbar = (props) => {
 
     const data = useStaticQuery(graphql`
     query{
-        nameLogoImage: file(relativePath: { eq: "name_logo.png" }) {
+        nameLogoImage: file(relativePath: { eq: "name_logo.jpg" }) {
                             childImageSharp {
                                 fixed {
                                     ...GatsbyImageSharpFixed

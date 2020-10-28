@@ -15,42 +15,42 @@ const WorkSection = () => {
   
   const data = useStaticQuery(graphql
     `query{
-      cbproImage: file(relativePath: { eq: "cbprotrader.png" }) {
+      cbproImage: file(relativePath: { eq: "cbprotrader.jpg" }) {
         childImageSharp {
             fluid(maxWidth: 1600) {
                 ...GatsbyImageSharpFluid
             }
         }
       },
-      scdjImage: file(relativePath: { eq: "soundclouddj.png" }) {
+      scdjImage: file(relativePath: { eq: "soundclouddj.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1600) {
                 ...GatsbyImageSharpFluid
             }
         }
       },
-      unfriended: file(relativePath: { eq: "unfriended.png" }) {
+      unfriended: file(relativePath: { eq: "unfriended.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1600) {
                 ...GatsbyImageSharpFluid
             }
         }
       },
-      ssplImage: file(relativePath: { eq: "sspl.png" }) {
+      ssplImage: file(relativePath: { eq: "sspl.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1600) {
                 ...GatsbyImageSharpFluid
             }
         }
       },
-      imgsiteImage: file(relativePath: { eq: "imgsite.png" }) {
+      imgsiteImage: file(relativePath: { eq: "imgsite.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1600) {
                 ...GatsbyImageSharpFluid
             }
         }
       },
-      aqiImage: file(relativePath: { eq: "aqi.png" }) {
+      aqiImage: file(relativePath: { eq: "aqi.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1600) {
                 ...GatsbyImageSharpFluid

@@ -7,7 +7,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 const AboutSection = () => {
     const data = useStaticQuery(graphql`
     query{
-        psuLogoImage: file(relativePath: { eq: "psu_logo.png" }) {
+        psuLogoImage: file(relativePath: { eq: "psu_logo.jpg" }) {
                             childImageSharp {
                                 fluid {
                                     ...GatsbyImageSharpFluid
