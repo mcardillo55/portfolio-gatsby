@@ -6,7 +6,7 @@ import Img from 'gatsby-image';
 
 const ProjectCard = (props) => {
     return(
-        <Card className="h-100" onClick={() => props.image_modal_handler(props.image)}>
+        <Card className="h-100" onClick={(e) => {if (e.target.tagName === "IMG") {props.image_modal_handler(props.image)} } }>
             { props.image && 
                 (typeof(props.image) == 'object' && <Img className={props.image_pad && "card-img-padded"} fluid={props.image} />) ||
                 <Card.Img className={props.image_pad && "card-img-padded"} variant="top" src={props.image}/>
