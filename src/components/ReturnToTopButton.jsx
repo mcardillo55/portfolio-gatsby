@@ -1,5 +1,7 @@
 import React from 'react';
 import { animateScroll as scroll } from 'react-scroll';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 
 const ReturnToTopButton = (props) => {
     return ( 
@@ -8,7 +10,7 @@ const ReturnToTopButton = (props) => {
                 id="return-to-top"
                 style={{display: props.yOffset > 50 ? "block" : "none"}}
                 onClick={() => {scroll.scrollToTop({duration: 200})}}>
-                <i className="fa fa-chevron-up"></i>
+                <FontAwesomeIcon icon={faChevronUp} />
         </button>
     );
 }

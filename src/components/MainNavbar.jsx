@@ -4,6 +4,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import Img from 'gatsby-image';
 import { graphql, useStaticQuery } from 'gatsby';
 import { scroller } from 'react-scroll';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 const MainNavbar = (props) => {
     let collapse_ref = useRef(null);
@@ -30,7 +32,7 @@ const MainNavbar = (props) => {
             <Navbar.Brand className="mr-auto" id="name"><Img fixed={data.nameLogoImage.childImageSharp.fixed} /></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav">
                 <span>
-                    <i className="fa fa-bars"></i>
+                    <FontAwesomeIcon icon={faBars} />
                 </span></Navbar.Toggle>
             <Navbar.Collapse ref={collapse_ref}>
                 <Nav className="ml-auto">

@@ -3,6 +3,8 @@ import Container from 'react-bootstrap/Container';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFileCode, faDatabase, faTools } from '@fortawesome/free-solid-svg-icons'
 
 const SkillsSection = () => {
   return(
@@ -14,7 +16,7 @@ const SkillsSection = () => {
                     <div className="border rounded py-3 px-4">
                         <div className="text-center">
                             <div className="skill-circle">
-                                <i class="fas fa-file-code fa-2x"></i>
+                                <FontAwesomeIcon icon={faFileCode} size="2x" />
                             </div>
                         </div>
                         <h6 className="mb-2 font-weight-bold text-center">Frontend</h6>
@@ -31,7 +33,7 @@ const SkillsSection = () => {
                     <div className="border rounded py-3 px-4">
                         <div className="text-center">
                             <div className="skill-circle text-center">
-                                <i class="fas fa-database fa-2x"></i>
+                                <FontAwesomeIcon icon={faDatabase} size="2x" />
                             </div>
                         </div>
                         <h6 className="mb-2 font-weight-bold text-center">Backend</h6>
@@ -48,7 +50,7 @@ const SkillsSection = () => {
                     <div className="border rounded py-3 px-4">
                         <div className="text-center">
                             <div className="skill-circle text-center">
-                                <i class="fas fa-tools fa-2x"></i>
+                                <FontAwesomeIcon icon={faTools} size="2x" />
                             </div>
                         </div>
                         <h6 className="mb-2 font-weight-bold text-center">Other</h6>
