@@ -50,7 +50,7 @@ const AboutSection = () => {
                     </Row>
                     <Row>
                         <Col>
-                            <h6>Below is an interesting selection of my work. Feel free to <a href="mailto:mcardillo55@gmail.com">contact me</a> with any questions, collaborations or work opportunities!</h6>
+                            <p className="text-center">Below is an interesting selection of my work. Feel free to <a href="mailto:mcardillo55@gmail.com">contact me</a> with any questions, collaborations or work opportunities!</p>
                         </Col>
                     </Row>
                 </Col>
