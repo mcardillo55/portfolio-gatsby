@@ -17,7 +17,7 @@ const MainNavbar = (props) => {
     query{
         nameLogoImage: file(relativePath: { eq: "name_logo.jpg" }) {
                             childImageSharp {
-                                fixed {
+                                fixed(quality: 100) {
                                     ...GatsbyImageSharpFixed
                                 }
                             }
