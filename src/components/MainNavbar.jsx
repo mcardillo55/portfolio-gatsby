@@ -42,7 +42,7 @@ const MainNavbar = (props) => {
     `)
 
     return(
-        <Navbar collapseOnSelect expand="lg" variant="custom" expanded={expanded}>
+        <Navbar collapseOnSelect expand="lg" variant="custom" expanded={expanded} onSelect={() => setExpanded(false)}>
             <Navbar.Brand className="mr-auto" id="name"><Img fixed={data.nameLogoImage.childImageSharp.fixed} /></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(!expanded)}>
                 <span>
