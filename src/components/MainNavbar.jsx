@@ -52,24 +52,28 @@ const MainNavbar = (props) => {
                         offset: getOffset(),
                         duration: 500
                     })}>
-                        ABOUT
+                        <span className="nav-text">ABOUT</span>
                     </Nav.Link>
                     <Nav.Link eventKey="2" onSelect={() => scroller.scrollTo('skills', {
                         smooth: true,
                         offset: getOffset(),
                         duration: 500
                     })}>
-                        SKILLS
+                        <span className="nav-text">SKILLS</span>
                     </Nav.Link>
                     <Nav.Link eventKey="3" onSelect={() => scroller.scrollTo('work', {
                         smooth: true,
                         offset: getOffset(),
                         duration: 500
                     })}>
-                        WORK
+                        <span className="nav-text">WORK</span>
                     </Nav.Link>
-                    <Nav.Link eventKey="4" href="/mike_cardillo_resume.pdf">RESUME</Nav.Link>
-                    <Nav.Link eventKey="5" href="https://github.com/mcardillo55">GITHUB</Nav.Link>
+                    <Nav.Link eventKey="4" href="/mike_cardillo_resume.pdf">
+                        <span className="nav-text">RESUME</span>
+                    </Nav.Link>
+                    <Nav.Link eventKey="5" href="https://github.com/mcardillo55">
+                        <span className="nav-text">GITHUB</span>
+                    </Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
