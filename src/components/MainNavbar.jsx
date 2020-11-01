@@ -17,14 +17,17 @@ const MainNavbar = (props) => {
         return (offset < 50 ? 0 : offset * -1)
     }
 
-    window.addEventListener('resize', () => {
-        if (window.innerWidth > 992) {
-            setCollapseTimeout(0);
-            setExpanded(false);
-        } else {
-            setCollapseTimeout(300);
-        }
-    });
+    React.useEffect(() => {
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 992) {
+                setCollapseTimeout(0);
+                setExpanded(false);
+            } else {
+                setCollapseTimeout(300);
+            }
+        });
+    })
+
 
     const data = useStaticQuery(graphql`
     query{
