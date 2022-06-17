@@ -15,6 +15,13 @@ const WorkSection = () => {
   
   const data = useStaticQuery(graphql
     `query{
+      alLogo: file(relativePath: { eq: "algologic.jpg" }) {
+        childImageSharp {
+            fluid(maxWidth: 1600) {
+                ...GatsbyImageSharpFluid
+            }
+        }
+      },
       cbproImage: file(relativePath: { eq: "cbprotrader.jpg" }) {
         childImageSharp {
             fluid(maxWidth: 1600) {
@@ -63,6 +70,14 @@ const WorkSection = () => {
   const projects_list = 
   [
     {
+      title: "Algo-Logic Systems",
+      image: data.alLogo.childImageSharp.fluid,
+      description: "Senior Full Stack software engineer, responsible for several different web systems, CI/CD workflows, and DevOps monitoring",
+      demo_link: "https://www.algo-logic.com/",
+      stack: ["Python", "Django", "Flask", "ReactJS", "GitLab CI/CD", "Docker", "Grafana", "Prometheus"],
+      years: "2021-Current"
+    },
+    {
       title: "cbpro-trader",
       source_link: "https://github.com/mcardillo55/cbpro-trader",
       demo_link: "https://www.michaeljcardillo.com/cbpro/",
@@ -70,6 +85,13 @@ const WorkSection = () => {
       description: "Automated cryptocurrency trader that uses technical analysis strategies to trade on live tick data provided by Coinbase.",
       stack: ["Python", "Flask", "ReactJS", "Websockets", "NumPy"],
       years: "2017-2018"
+    },
+    {
+      title: "Cisco Systems",
+      image: CiscoLogo,
+      image_pad: true,
+      description: "Implemeted kernel features such as a system page, OS hardening, upstream patch merge automation, and urgent CVE patching.",
+      stack: ["Python", 'Bash', "C", "Yocto"]
     },
     {
       title: "ImgSite",
@@ -81,11 +103,13 @@ const WorkSection = () => {
       years: "2016"
     },
     {
-      title: "Cisco Systems",
-      image: CiscoLogo,
-      image_pad: true,
-      description: "Implemeted kernel features such as a system page, OS hardening, upstream patch merge automation, and urgent CVE patching.",
-      stack: ["Python", 'Bash', "C", "Yocto"]
+      title: "soundcloud-dj",
+      source_link: "https://github.com/mcardillo55/soundcloud-dj",
+      demo_link: "https://www.michaeljcardillo.com/scdj",
+      image: data.scdjImage.childImageSharp.fluid,
+      description: "Parses a Facebook group with Graph API to locate and store SoundCloud and YouTube URLs. Songs are then displayed in their respective player via an AngularJS Frontend.",
+      stack: ["Python", "Flask", "AngularJS", "SQLite", "SocketIO"],
+      years: "2014"
     },
     {
       title: "Air Quality GNOME Extension",
@@ -95,15 +119,6 @@ const WorkSection = () => {
       description: "A GNOME Desktop extension that locates and displays air quality from local PurpleAir sensors.",
       stack: ["JavaScript", "GJS", "GNOME"],
       years: 2020
-    },
-    {
-      title: "soundcloud-dj",
-      source_link: "https://github.com/mcardillo55/soundcloud-dj",
-      demo_link: "https://www.michaeljcardillo.com/scdj",
-      image: data.scdjImage.childImageSharp.fluid,
-      description: "Parses a Facebook group with Graph API to locate and store SoundCloud and YouTube URLs. Songs are then displayed in their respective player via an AngularJS Frontend.",
-      stack: ["Python", "Flask", "AngularJS", "SQLite", "SocketIO"],
-      years: "2014"
     },
     {
       title: "unfriended",
