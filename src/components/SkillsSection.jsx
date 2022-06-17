@@ -24,7 +24,7 @@ const SkillsSection = () => {
                             <ListGroup.Item>HTML</ListGroup.Item>
                             <ListGroup.Item>JavaScript</ListGroup.Item>
                             <ListGroup.Item>CSS</ListGroup.Item>
-                            <ListGroup.Item>React</ListGroup.Item>
+                            <ListGroup.Item>ReactJS</ListGroup.Item>
                             <ListGroup.Item>Bootstrap</ListGroup.Item>
                         </ListGroup>
                     </div>
@@ -38,11 +38,11 @@ const SkillsSection = () => {
                         </div>
                         <h6 className="mb-2 font-weight-bold text-center">Backend</h6>
                         <ListGroup variant="flush">
-                            <ListGroup.Item>Python/Flask/Django</ListGroup.Item>
+                            <ListGroup.Item>Python</ListGroup.Item>
+                            <ListGroup.Item>Flask/Django</ListGroup.Item>
                             <ListGroup.Item>Node.JS/Express</ListGroup.Item>
-                            <ListGroup.Item>MongoDB</ListGroup.Item>
-                            <ListGroup.Item>MySQL</ListGroup.Item>
-                            <ListGroup.Item>SQLite</ListGroup.Item>
+                            <ListGroup.Item>PostgreSQL</ListGroup.Item>
+                            <ListGroup.Item>Redis</ListGroup.Item>
                         </ListGroup>
                     </div>
                 </Col>
@@ -56,10 +56,10 @@ const SkillsSection = () => {
                         <h6 className="mb-2 font-weight-bold text-center">Other</h6>
                         <ListGroup variant="flush">
                             <ListGroup.Item>Docker</ListGroup.Item>
-                            <ListGroup.Item>C, C++</ListGroup.Item>
+                            <ListGroup.Item>GitLab CI/CD</ListGroup.Item>
+                            <ListGroup.Item>Prometheus</ListGroup.Item>
+                            <ListGroup.Item>Grafana</ListGroup.Item>
                             <ListGroup.Item>GNU/Linux</ListGroup.Item>
-                            <ListGroup.Item>Mac OS X</ListGroup.Item>
-                            <ListGroup.Item>Windows</ListGroup.Item>
                         </ListGroup>
                     </div>
                 </Col>
