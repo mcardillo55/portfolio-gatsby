@@ -71,7 +71,7 @@ const MainNavbar = (props) => {
                     })}>
                         <span className="nav-text">WORK</span>
                     </Nav.Link>
-                    <Nav.Link eventKey="4" href="/mike_cardillo_resume.pdf">
+                    <Nav.Link eventKey="4" href="/michael_cardillo_resume.pdf">
                         <span className="nav-text">RESUME</span>
                     </Nav.Link>
                     <Nav.Link eventKey="5" href="https://github.com/mcardillo55">
