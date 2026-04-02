@@ -95,7 +95,7 @@ const WorkSection = () => {
     {
       title: "ImgSite",
       source_link: "https://github.com/mcardillo55/imagesite",
-      demo_link: "https://www.michaeljcardillo.com/imgsite",
+      demo_link: "https://www.michaeljcardillo.com/imgsite/",
       image: data.imgsiteImage.childImageSharp.fluid,
       description: "Clone of Imgur - an image hosting service with user accounts.",
       stack: ["Python", "Django", "Bootstrap"],
@@ -104,7 +104,7 @@ const WorkSection = () => {
     {
       title: "soundcloud-dj",
       source_link: "https://github.com/mcardillo55/soundcloud-dj",
-      demo_link: "https://www.michaeljcardillo.com/scdj",
+      demo_link: "https://www.michaeljcardillo.com/scdj/",
       image: data.scdjImage.childImageSharp.fluid,
       description: "Parses a Facebook group with Graph API to locate and store SoundCloud and YouTube URLs. Songs are then displayed in their respective player via an AngularJS Frontend.",
       stack: ["Python", "Flask", "AngularJS", "SQLite", "SocketIO"],
