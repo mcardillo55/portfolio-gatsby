@@ -22,6 +22,13 @@ const WorkSection = () => {
             }
         }
       },
+      cbproImage: file(relativePath: { eq: "cbprotrader.jpg" }) {
+        childImageSharp {
+            fluid(maxWidth: 1600) {
+                ...GatsbyImageSharpFluid
+            }
+        }
+      },
       scdjImage: file(relativePath: { eq: "soundclouddj.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1600) {
@@ -69,6 +76,14 @@ const WorkSection = () => {
       demo_link: "https://www.algo-logic.com/",
       stack: ["Python", "Django", "Flask", "ReactJS", "GitLab CI/CD", "Docker", "Grafana", "Prometheus"],
       years: "2021-Current"
+    },
+    {
+      title: "cbpro-trader",
+      source_link: "https://github.com/mcardillo55/cbpro-trader",
+      image: data.cbproImage.childImageSharp.fluid,
+      description: "Automated cryptocurrency trader that uses technical analysis strategies to trade on live tick data provided by Coinbase.",
+      stack: ["Python", "Flask", "ReactJS", "Websockets", "NumPy"],
+      years: "2017-2018"
     },
     {
       title: "Cisco Systems",
